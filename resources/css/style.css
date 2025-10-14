@@ -1,0 +1,66 @@
+/* resources/css/style.css */
+
+/* --- General & Body Styles --- */
+
+body {
+  background-color: #000; /* Black background as a fallback */
+  color: #fff; /* White text color for high contrast */
+  font-family: Verdana, Geneva, Tahoma, sans-serif; /* Clean, sans-serif font */
+  text-align: center; /* Center-align all content */
+  margin: 0; /* Remove default browser margin */
+}
+
+/* --- Typography --- */
+
+h1 {
+  font-size: 50px;
+  font-weight: normal; /* A lighter font-weight for a modern look */
+}
+
+h2 {
+  font-size: 42px;
+  font-weight: 300; /* Even lighter than the h1 */
+}
+
+p {
+  color: aquamarine; /* A vibrant color for supporting text */
+  font-size: 21px;
+}
+
+/* --- Links (Call to Action) --- */
+
+.cta {
+  color: aquamarine; /* Match the paragraph color */
+  font-size: 16px;
+  text-decoration: none; /* Remove the default underline from the link */
+}
+
+/* --- Media Elements --- */
+
+video {
+  /* This ensures the video covers the entire viewport */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Prevents the video from being distorted */
+  z-index: -1; /* Places the video behind all other content */
+}
+
+/* Style for the phone image */
+.app {
+  max-width: 200px; /* Set a maximum width to keep it reasonably sized */
+}
+
+/* --- Footer --- */
+
+.footer {
+  padding: 20px;
+}
+
+.footer p {
+  color: gray; /* A muted color for the copyright notice */
+  font-size: 16px;
+  text-align: right; /* A common alignment for footers */
+}
