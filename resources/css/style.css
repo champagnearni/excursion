@@ -64,3 +64,51 @@ video {
   font-size: 16px;
   text-align: right; /* A common alignment for footers */
 }
+
+/* --- Wacky Menu Styles --- */
+
+.wacky-menu {
+  padding: 20px 0;
+  width: 100%;
+  position: sticky; /* Keeps the menu at the top */
+  top: 0;
+  z-index: 10; /* Ensures it stays above the video */
+  backdrop-filter: blur(5px); /* Blurs the video behind the menu */
+}
+
+.wacky-menu ul {
+  display: flex; /* Lines up menu items horizontally */
+  justify-content: center; /* Centers the items */
+  gap: 20px; /* Adds space between items */
+  margin: 0;
+  padding: 0;
+  list-style-type: none; /* Removes bullet points */
+}
+
+.wacky-menu a {
+  display: block;
+  padding: 10px 20px;
+  background-color: #8a2be2; /* BlueViolet */
+  color: #ffeb3b; /* Bright Yellow */
+  font-family: "Comic Sans MS", cursive, sans-serif; /* The wackiest font */
+  font-size: 18px;
+  font-weight: bold;
+  text-decoration: none;
+  border: 3px solid #00ff00; /* Lime Green */
+  border-radius: 15px 0 15px 0;
+  transition: transform 0.4s ease-in-out, background-color 0.4s;
+}
+
+/* --- Tilted & Hover Effects --- */
+
+/* Tilt each menu item differently */
+.wacky-menu li:nth-child(1) { transform: rotate(-4deg); }
+.wacky-menu li:nth-child(2) { transform: rotate(3deg); }
+.wacky-menu li:nth-child(3) { transform: rotate(5deg); }
+.wacky-menu li:nth-child(4) { transform: rotate(-2deg); }
+
+/* Make them spin and grow on hover! */
+.wacky-menu a:hover {
+  background-color: #ff1493; /* DeepPink */
+  transform: scale(1.2) rotate(360deg);
+}
